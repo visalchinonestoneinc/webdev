@@ -2,7 +2,7 @@ jQuery(document).ready(function() {
     // ECHARTS
     require.config({
         paths: {
-            echarts: '../assets/global/plugins/echarts/'
+            echarts: 'assets/global/plugins/echarts/'
         }
     });
 
@@ -36,7 +36,7 @@ jQuery(document).ready(function() {
                     trigger: 'axis'
                 },
                 legend: {
-                    data: ['Cost', 'Expenses']
+                    data: ['Electricity', 'Expenses']
                 },
                 toolbox: {
                     show: true,
@@ -72,7 +72,7 @@ jQuery(document).ready(function() {
                     }
                 }],
                 series: [{
-                    name: 'Cost',
+                    name: 'Electricity',
                     type: 'bar',
                     data: [2.0, 4.9, 7.0, 23.2, 25.6, 76.7, 135.6, 162.2, 32.6, 20.0, 6.4, 3.3]
                 }, {
